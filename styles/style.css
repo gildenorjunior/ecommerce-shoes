@@ -1,0 +1,114 @@
+@import url("./reset.css");
+
+/* FONTES */
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../fontes/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("../fontes/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url("../fontes/Montserrat-SemiBold.ttf");
+}
+
+/* VARIAVEIS */
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+}
+
+.nav-bar__ofertas{
+  background-color: var(--title);
+  color: var(--white);
+
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: Montserrat-Medium;
+}
+
+.nav-bar__titulo-cabecalho {
+  color: var(--title);
+  background-color: var(--bgSite);
+
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Montserrat-Bold;
+}
+
+.banner {
+  background-image: url("../img/wallpaper.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 378px;
+
+  display: flex;
+  align-items: center;
+
+  /* filter: brightness(60%); */
+}
+
+.banner__letreiro {
+  font-family: Montserrat-SemiBold;
+
+  width: 30%;
+  color: var(--white);
+}
+
+.destaques {
+  font-family: Montserrat-Medium;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 58px 0;
+}
+
+.catalogo {
+  display: flex;
+  justify-content: center;
+}
+
+.catalogo__tenis {
+  width: 300px;
+  height: 302px;
+  border: 1px solid black;
+  margin: 10px;
+
+  background-color: var(--bgCard);
+
+
+  /* #nomeDiv{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap; //Ele vai fazer com que o nosso flexbox quebre;
+    } */
+}
+
+.rodape {
+  height: 60px;
+  background-color: var(--title);
+  color: var(--white);
+
+  font-family: Montserrat-Medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
