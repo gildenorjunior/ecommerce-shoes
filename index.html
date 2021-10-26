@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Desafio 2</title>
 </head>
 
 <body>
     <header>
-        <nav class="nav-bar">
-            <div class="nav-bar__ofertas">
+        <nav class="navbar">
+            <div class="navbar__ofertas">
                 <p>Ganhe R$ 10,00 de desconto no frete</p>
             </div>
-            <div class="nav-bar__titulo-cabecalho">
-                <h2>JordanShoes</h2>
+            <div class="navbar__titulo-cabecalho">
+                <h2>WorldTênis</h2>
             </div>
         </nav>
         <div class="banner">
             <div class="banner__letreiro">
-                <h1>A melhor loja de Jordan</h1>
-                <p>O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael.</p>
+                <h1>A melhor loja de tênis da região</h1>
+                <p id="typed"></p>
+                <div id="typed-strings">
+                    <p id="typed">Os tênis são fruto de uma velha e forte parceria entre a Nike e o jogador Michael.</p>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
         <div class="destaques">
-            <h2>Destaques</h2>
-            <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
+            <div class="destaques__letreiro">
+                <h2>Destaques</h2>
+                <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
+            </div>
         </div>
 
         <div class="catalogo">
@@ -74,6 +80,12 @@
         <span>Todos os direitos reservados.</span>
     </footer>
 
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 80
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

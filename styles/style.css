@@ -27,7 +27,7 @@
   --text: #474747;
 }
 
-.nav-bar__ofertas{
+.navbar__ofertas{
   background-color: var(--title);
   color: var(--white);
 
@@ -39,7 +39,7 @@
   font-family: Montserrat-Medium;
 }
 
-.nav-bar__titulo-cabecalho {
+.navbar__titulo-cabecalho {
   color: var(--title);
   background-color: var(--bgSite);
 
@@ -52,54 +52,66 @@
 }
 
 .banner {
-  background-image: url("../img/wallpaper.jpeg");
+  background-image: url("../img/wallpaper1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 378px;
+  min-height: 380px;
+  background-attachment: fixed;
+  /* filter: brightness(50%); */
 
   display: flex;
   align-items: center;
-
-  /* filter: brightness(60%); */
 }
 
 .banner__letreiro {
   font-family: Montserrat-SemiBold;
 
-  width: 30%;
-  color: var(--white);
+  color: var(--text);
+  margin: 0 40px;
 }
 
 .destaques {
   font-family: Montserrat-Medium;
+  height: 215px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.destaques__letreiro {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 58px 0;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .catalogo {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
 .catalogo__tenis {
   width: 300px;
   height: 302px;
-  border: 1px solid black;
   margin: 10px;
 
+  display: flex;
+  align-items: center;
+
   background-color: var(--bgCard);
+}
 
+.catalogo__tenis > img:hover {
+  transform: scale(1.3);
+  transition: 1s all ease;
 
-  /* #nomeDiv{
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     flex-wrap: wrap; //Ele vai fazer com que o nosso flexbox quebre;
-    } */
+  cursor: pointer;
 }
 
 .rodape {
